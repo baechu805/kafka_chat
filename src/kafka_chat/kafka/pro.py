@@ -4,7 +4,7 @@ import json
 from tqdm import tqdm
 
 pro = KafkaProducer(
-    bootstrap_servers=['localhost:9092'], #  Kafka 브로커의 주소를 설정
+    bootstrap_servers=['localhost:9092'], # KafkaProducer 객체가 localhost:9092에서 실행 중인 Kafka 브로커에 연결
     value_serializer=lambda x: json.dumps(x).encode('utf-8') # json형식으로 데이터 직렬화
 )
 
