@@ -1,5 +1,5 @@
 from kafka import KafkaConsumer, TopicPartition
-from json import loads
+from json import loads #  JSON 문자열을 Python 객체로 변환
 import os
 
 OFFSET_FILE = 'consumer_offset.txt'
