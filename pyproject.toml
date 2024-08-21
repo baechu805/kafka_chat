@@ -1,0 +1,27 @@
+[project]
+name = "kafka_chat"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "baechu805", email = "bjoo606@naver.com"},
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=8.3.2",
+]
+
+
+[tool.pytest.ini_option]
+pythonpath = "src"
+
+[project.scripts]
+kcaht-ping = 'kafka_chat.cli:ping'
